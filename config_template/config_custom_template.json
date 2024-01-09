@@ -111,6 +111,9 @@
         "auto",
         "direct",
         "{all}"
+      ],
+      "filter":[
+        {"action":"exclude","keywords":["网站|剩余|流量|过期|时间|期|地址|引导"]}
       ]
     },
     {
@@ -301,16 +304,16 @@
         "🇨🇦 加拿大节点",
         "🇰🇷 韩国节点",
         "✈️ 其他节点",
+        "proxy",
         "direct"
       ],
-      "default": "🇭🇰 香港节点"
+      "default": "proxy"
     },
     {
       "tag":"🇭🇰 香港节点",
       "type":"selector",
       "outbounds":[
-        "{all}",
-        "proxy"
+        "{all}"
       ],
       "filter":[
         {"action":"include","keywords":["🇭🇰|HK|hk|香港|港|HongKong"]}
@@ -320,19 +323,17 @@
       "tag":"🇨🇳 台湾节点",
       "type":"selector",
       "outbounds":[
-        "{all}",
-        "proxy"
+        "{all}"
       ],
       "filter":[
-        {"action":"include","keywords":["🇹🇼|🇨🇳|TW|tw|台湾|臺灣|台|Taiwan"]}
+        {"action":"include","keywords":["🇨🇳|TW|tw|台湾|臺灣|台|Taiwan"]}
       ]
     },
     {
       "tag":"🇸🇬 狮城节点",
       "type":"selector",
       "outbounds":[
-        "{all}",
-        "proxy"
+        "{all}"
       ],
       "filter":[
         {"action":"include","keywords":["🇸🇬|SG|sg|新加坡|狮|Singapore"]}
@@ -342,8 +343,7 @@
       "tag":"🇯🇵 日本节点",
       "type":"selector",
       "outbounds":[
-        "{all}",
-        "proxy"
+        "{all}"
       ],
       "filter":[
         {"action":"include","keywords":["🇯🇵|JP|jp|日本|日|Japan"]}
@@ -353,8 +353,7 @@
       "tag":"🇺🇸 美国节点",
       "type":"selector",
       "outbounds":[
-        "{all}",
-        "proxy"
+        "{all}"
       ],
       "filter":[
         {"action":"include","keywords":["🇺🇸|US|us|美国|美|United States"]}
@@ -364,19 +363,17 @@
       "tag":"🇨🇦 加拿大节点",
       "type":"selector",
       "outbounds":[
-        "{all}",
-        "proxy"
+        "{all}"
       ],
       "filter":[
-        {"action":"include","keywords":["🇨🇦|CA|ca|加拿大|加|Canada"]}
+        {"action":"include","keywords":["🇨🇦|CA|ca|加拿大|Canada"]}
       ]
     },
     {
       "tag":"🇰🇷 韩国节点",
       "type":"selector",
       "outbounds":[
-        "{all}",
-        "proxy"
+        "{all}"
       ],
       "filter":[
         {"action":"include","keywords":["🇰🇷|KR|kr|韩国|韩|South Korea"]}
@@ -386,11 +383,10 @@
       "tag":"✈️ 其他节点",
       "type":"selector",
       "outbounds":[
-        "{all}",
-        "proxy"
+        "{all}"
       ],
       "filter":[
-        {"action":"exclude","keywords":["🇭🇰|HK|hk|香港|香|🇹🇼|🇨🇳|TW|tw|台湾|台|🇸🇬|SG|sg|新加坡|狮|🇯🇵|JP|jp|日本|日|🇺🇸|US|us|美国|美|🇨🇦|CA|ca|加拿大|加|🇰🇷|KR|kr|韩国|韩|网站|剩余|流量|过期|时间|期|地址|引导"]}
+        {"action":"exclude","keywords":["🇭🇰|HK|hk|香港|香|🇨🇳|TW|tw|台湾|台|🇸🇬|SG|sg|新加坡|狮|🇯🇵|JP|jp|日本|日|🇺🇸|US|us|美国|美|🇨🇦|CA|ca|加拿大|加|🇰🇷|KR|kr|韩国|韩|网站|剩余|流量|过期|时间|期|地址|引导"]}
       ]
     },
     {
