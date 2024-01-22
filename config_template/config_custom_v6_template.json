@@ -25,15 +25,9 @@
         "detour": "proxy"
       },
       {
-        "tag": "local",
+        "tag": "localDns",
         "address": "https://120.53.53.53/dns-query",
         "detour": "direct"
-      },
-      {
-        "tag": "localDns",
-        "address": "https://sm2.doh.pub/dns-query",
-        "detour": "direct",
-        "address_resolver": "local"
       },
       {
         "tag": "block",
@@ -89,6 +83,7 @@
       "inet4_address": "172.19.0.1/30",
       "inet6_address": "fdfe:dcba:9876::1/126",
       "mtu": 9000,
+      "gso": false,
       "auto_route": true,
       "strict_route": true,
       "sniff": true,
@@ -107,7 +102,12 @@
       "listen": "127.0.0.1",
       "listen_port": 2080,
       "sniff": true,
-      "users": []
+      "users": [
+        {
+          "username": "admin",
+          "password": "admin"
+        }
+      ]
     }
   ],
   "outbounds": [
@@ -138,7 +138,7 @@
         "✈️ 其他节点",
         "direct"
       ],
-      "default": "🇸🇬 狮城节点"
+      "default": "🇭🇰 香港节点"
     },
     {
       "tag":"OpenAI",
@@ -170,7 +170,7 @@
         "✈️ 其他节点",
         "direct"
       ],
-      "default": "🇰🇷 韩国节点"
+      "default": "🇭🇰 香港节点"
     },
     {
       "tag":"Twitter",
@@ -186,7 +186,7 @@
         "✈️ 其他节点",
         "direct"
       ],
-      "default": "🇰🇷 韩国节点"
+      "default": "🇭🇰 香港节点"
     },
     {
       "tag":"Facebook",
@@ -202,7 +202,7 @@
         "✈️ 其他节点",
         "direct"
       ],
-      "default": "🇰🇷 韩国节点"
+      "default": "🇭🇰 香港节点"
     },
     {
       "tag":"NETFLIX",
