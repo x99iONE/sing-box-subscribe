@@ -102,12 +102,7 @@
       "listen": "127.0.0.1",
       "listen_port": 2080,
       "sniff": true,
-      "users": [
-        {
-          "username": "admin",
-          "password": "admin"
-        }
-      ]
+      "users": []
     }
   ],
   "outbounds": [
