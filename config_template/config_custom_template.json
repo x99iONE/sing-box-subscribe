@@ -1,6 +1,6 @@
 {
   "log": {
-    "level": "info",
+    "level": "debug",
     "timestamp": true
   },
   "experimental": {
@@ -21,12 +21,12 @@
     "servers": [
       {
         "tag": "proxyDns",
-        "address": "tls://8.8.8.8",
+        "address": "https://8.8.8.8/dns-query",
         "detour": "proxy"
       },
       {
         "tag": "localDns",
-        "address": "https://120.53.53.53/dns-query",
+        "address": "https://106.55.91.174/dns-query",
         "detour": "direct"
       },
       {
