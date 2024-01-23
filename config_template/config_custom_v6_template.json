@@ -20,13 +20,20 @@
   "dns": {
     "servers": [
       {
+        "tag": "local",
+        "address": "https://120.53.53.53/dns-query",
+        "detour": "direct"
+      },
+      {
         "tag": "proxyDns",
-        "address": "https://8.8.8.8/dns-query",
+        "address": "https://dns.google/dns-query",
+        "address_resolver": "local",
         "detour": "proxy"
       },
       {
         "tag": "localDns",
-        "address": "https://106.55.91.174/dns-query",
+        "address": "https://sm2.doh.pub/dns-query",
+        "address_resolver": "local",
         "detour": "direct"
       },
       {
