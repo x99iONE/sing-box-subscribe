@@ -122,7 +122,7 @@
         "{all}"
       ],
       "filter":[
-        {"action":"exclude","keywords":["网站|地址|剩余|流量|过期|时间|有效|引导"]}
+        {"action":"exclude","keywords":["网站|地址|剩余|过期|时间|有效|引导"]}
       ],
       "default": "auto"
     },
