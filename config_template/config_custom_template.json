@@ -20,7 +20,8 @@
   "dns": {
     "fakeip": {
       "enabled": true,
-      "inet4_range": "198.18.0.0/15"
+      "inet4_range": "198.18.0.0/15",
+      "inet6_range": "fc00::/18"
     },
     "servers": [
       {
@@ -52,20 +53,20 @@
       },
       {
         "outbound": "any",
-        "server": "tx",
+        "server": "localDns",
         "disable_cache": true
       },
       {
         "rule_set": "geosite-cn",
-        "server": "tx"
+        "server": "localDns"
       },
       {
         "clash_mode": "direct",
-        "server": "tx"
+        "server": "localDns"
       },
       {
         "clash_mode": "global",
-        "server": "google"
+        "server": "proxyDns"
       },
       {
         "inbound": "tun",
@@ -78,17 +79,18 @@
       },
       {
         "rule_set": "geosite-geolocation-!cn",
-        "server": "google"
+        "server": "proxyDns"
       }
     ],
     "independent_cache": true,
-    "strategy": "ipv4_only"
+    "strategy": "prefer_ipv4"
   },
   "inbounds": [
     {
       "tag": "tun",
       "type": "tun",
       "inet4_address": "172.19.0.0/30",
+      "inet6_address": "fdfe:dcba:9876::0/126",
       "stack": "system",
       "auto_route": true,
       "sniff": true,
