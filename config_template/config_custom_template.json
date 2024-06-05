@@ -25,7 +25,7 @@
     },
     "servers": [
       {
-        "tag": "local",
+        "tag": "localDns",
         "address": "https://120.53.53.53/dns-query",
         "detour": "direct"
       },
@@ -34,12 +34,6 @@
         "address": "https://dns.google/dns-query",
         "address_resolver": "local",
         "detour": "proxy"
-      },
-      {
-        "tag": "localDns",
-        "address": "https://sm2.doh.pub/dns-query",
-        "address_resolver": "local",
-        "detour": "direct"
       },
       {
         "tag": "block",
