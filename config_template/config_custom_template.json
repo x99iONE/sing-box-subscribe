@@ -113,15 +113,8 @@
     {
       "tag": "mixed",
       "type": "mixed",
-      "listen": "127.0.0.1",
-      "listen_port": 7890,
-      "sniff": true
-    },
-    {
-      "tag": "http",
-      "type": "http",
       "listen": "0.0.0.0",
-      "listen_port": 1313,
+      "listen_port": 7890,
       "sniff": true
     }
   ],
