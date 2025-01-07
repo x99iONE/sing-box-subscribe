@@ -105,7 +105,7 @@
         "172.19.0.0/30",
         "fdfe:dcba:9876::0/126"
       ],
-      "stack": "system",
+      "stack": "mixed",
       "auto_route": true,
       "strict_route": true,
       "sniff": true
