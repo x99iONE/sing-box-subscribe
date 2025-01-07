@@ -628,7 +628,7 @@
         "tag": "geosite-openai",
         "type": "remote",
         "format": "binary",
-        "url": "https://mirror.ghproxy.com/https://raw.githubusercontent.com/Toperlock/sing-box-geosite/main/rule/OpenAI.srs",
+        "url": "https://cdn.jsdelivr.net/gh/Toperlock/sing-box-geosite/rule/OpenAI.srs",
         "download_detour": "direct"
       },
       {
